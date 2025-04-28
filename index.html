@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,body{
+            box-sizing: border-box;
+            padding:0;
+            margin:0;
+            
+        }
+        .parent{
+            display:flex;
+            flex-direction: column;
+            font-family: Arial,sans-serif;
+           
+        }
+        .first{
+            
+            
+            display:flex;
+            flex:1;
+            height:15vh;
+        
+            position:sticky;
+        }
+            .image{
+
+            
+            height: 100vh;
+            width:100vw;
+            background: url(https://company-portfolio-1.netlify.app/img/slider-3.jpg);
+            background-repeat: no-repeat;
+           background-size: cover;
+            }
+          
+       
+       
+        .menu{
+            display:flex;
+            flex:1;
+            margin-top: 10px;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap:20px;
+           
+        }
+        .menu a {
+            color:white;
+            text-decoration: none;
+        }
+      
+        .h {
+            
+            border:1px solid #1dbf73;
+            background-color: #1dbf73;
+            color: white;
+            height: 30px;
+            width: 150px;  
+            margin-left:600px;
+            padding-top: 5px;
+           
+            
+            
+        }
+
+        .a {
+            padding: 20px;
+        }
+
+        .a h1 {
+            text-align: center;
+        }
+
+        .a p {
+            text-align: center;
+            font-size:20px;
+            margin: 20px 0;
+        }
+        .about{
+            padding:20px;
+        }
+        .about,.m{
+            text-align: center;
+        }
+        .sec{
+display:flex;
+        }
+        .img1{
+flex:1;
+        }
+        .para{
+flex:1;
+        }
+        .imagess{
+            display:flex;
+            height:-50vh;
+        }
+        .services{
+            height:100vh;
+            padding-bottom: 20px;
+            margin-top: 20vh;
+        }
+        .web{
+       
+            display:flex;
+            align-items: center;
+            height:40vh;
+          
+        }
+        .web2{
+            display:flex;
+            align-items: center;
+            height:40vh;
+          
+        }
+        .call{
+            height:50vh;
+            background-color: #1dbf73;
+            position:relative;
+            top:40px;
+        }
+        .gray{
+            background-color: rgb(209, 205, 205);
+            height:190vh;
+        }
+        .images{
+            align-items:center;
+        }
+       .i1{
+        border:1px solid white;
+        width:300px;
+        margin-left: 20px;
+        padding-top: 25px;
+        margin-right:20px;
+        height:400px;
+        background-color: white;
+        
+       }
+       .i2{
+        border:1px solid white;
+        width:300px;
+        padding-top: 25px;
+        margin-left: 20px;
+        margin-right:20px;
+        height:400px;
+        background-color: white;
+        
+       }
+       .i3{
+        border:1px solid white;
+        width:300px;
+        padding-top: 25px;
+        margin-left: 20px;
+        margin-right:20px;
+        height:400px;
+        background-color: white;
+        
+       }
+       .table {
+            display: flex;
+            
+            gap: 20px;
+            margin-top: 80px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .o1, .o2, .o3 {
+            flex: 1; 
+            text-align: center;
+            border: 1px solid white;
+            height: 500px;
+            width:20px;
+            padding: 20px;
+            box-sizing: border-box; 
+            background-color:white;
+        }
+        .o1{
+            margin-left:40px;
+        }
+        .o2{
+        margin-bottom: 50px;
+        position: relative;
+    top: -40px; 
+        }
+        .our{
+            background-color:rgb(241, 234, 234);
+        }
+        a:hover{
+            background-color:#1dbf73;
+        }
+        .final{
+            
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+        
+        .bimage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+        .bimg1 {
+    position: relative;
+    border-radius: 5px;
+}
+
+.bimg1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    text-shadow:2px 2px 4px #1dbf73;
+}
+
+
+
+.bg p {
+    font-size: 10px;
+   
+}
+.contact{
+    background-color:rgb(241, 234, 234);
+
+}
+.cn{
+    display:flex;
+    align-items: center;
+     justify-content:center;
+     gap:20px;
+     
+}
+.c2{
+    border:5px solid white;
+    text-align:center;
+    background-color: white;
+    width:250px;
+    margin-top:20px;
+}
+i{
+    color:#1dbf73;
+    
+}
+.details{
+    border:5px solid white;
+    width:400px;
+    background-color: white;
+    position: relative;
+    top:-60px;
+    
+    
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    margin-top:30px;
+    gap:25px;
+   
+}
+.end{
+    display:flex;
+    background-color: #1dbf73;
+    color:rgb(250, 247, 247);
+    gap:20px;
+}
+.end i{
+    color:white;
+}
+.footer{
+height:15vh;
+background-color:black;
+color:white;
+position:relative;
+margin-top:-20px;
+
+display:flex;
+justify-content:space-between
+}
+.f1{
+   margin-left:450px;
+}
+.f2{
+    margin-top:15px;
+    margin-left:15px;
+}
+.e2 p{
+    position:relative;
+    margin-top:-5px;
+
+}
+.imagess{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="image">
+        <div class="first">
+            <div class="go">
+       <div style="color:#1dbf73; font-size:30px; margin-top: 40px; margin-left:30px;" > <b>GO GREEN</b></div>
+    </div>
+       <div class="menu" style="text-decoration: none;">
+        <a href="#" style="color:#1dbf73;">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">PRICE</a>
+        <a href="#">DROPDOWN</a>
+        <a href="#">CONTACT</a>
+
+       </div>
+    </div>
+    <div class="a">
+        <div class="m">
+        <h1>App Development</h1>
+        <p>Lorem ipsum dolor sit amet,consectetur adipiscng elit.Cras condimentum rutrum ligula.Integer ac portittor mi.In finibus vehicula aliquet.Vestibulum et velit placerat</p>
+<h2 class="h">Get Started</h2>
+    
+</div>
+</div>
+</div>
+<div class="gray">
+<div class="about">
+    <h1 style="margin-top:10px; text-decoration:dashed;"><b>About Us</b></h1>
+    <div style="font-size:50px; text-align: center;">----</div>
+  
+    <p style="color:gray;">Maecenas vel turpis quis lorem aliquam tempus quis non mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+<div class="sec">
+    <div class="img1">
+    <img src="https://company-portfolio-1.netlify.app/img/about.jpg" style="width:75%;height:75%;">
+</div>
+<div class="para">
+    <h1 style="color:#1dbf73;"><b>Welcome to Our Site</b></h1>
+    <p style="color:gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum rutrum ligula. Integer ac porttitor mi. In finibus vehicula aliquet. Vestibulum et velit placerat, pretium lorem id, porttitor libero. Suspendisse scelerisque nec arcu a malesuada. Nulla tempus dictum tristique.</p>
+<p style="border:1px solid #1dbf73;height:30px;width:100px; margin-left:20px;padding-top:-10px; align-items:left;color:black;background-color: green;">Read More</p>
+</div>
+</div>
+    </div>
+    <div class="imagess">
+        <div class="i1">
+            <img src="https://company-portfolio-1.netlify.app/img/about-mission.jpg" style="width:50%;height:35%;margin-left:20px;">
+            <p style="margin-left:5px; padding:20px;width:75%; margin-right:30px;color:gray;">Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis</p>
+            <div style="border:1px solid #1dbf73;height:30px;width:80px;position:relative;top:-25px; margin-left:100px; align-items:left;color:black;background-color: green;">Read More</div>
+        </div>
+        <div class="i2">
+            <img src="https://company-portfolio-1.netlify.app/img/about-vision.jpg"  style="width:50%;height:35%;margin-left:35px;">
+           
+         <p style="margin-left:5px; padding:20px;width:75%; margin-right:20px;color:gray;">Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis</p>
+         <div style="border:1px solid #1dbf73;height:30px;width:80px; margin-left:30px;position:relative;top:-25px; margin-left:100px; align-items:left;color:black;background-color: green;">Read More</div>
+        </div>
+        <div class="i3">
+            <img src="https://company-portfolio-1.netlify.app/img/about-objective.jpg"  style="width:50%;height:35%;margin-left:35px;">
+            <p style="margin-left:5px; padding:20px;width:75%; margin-right:30px;color:gray;">Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis</p>
+            <div style="border:1px solid #1dbf73;height:30px;width:80px; margin-left:30px;position:relative;top:-25px; margin-left:100px; align-items:left;color:black;background-color: green;">Read More</div>
+        </div>
+       </div>
+    </div>
+       <div class=services>
+        <h1 style="text-align: center;">SERVICES</h1>
+        <div style="font-size:50px; text-align: center;">----</div>
+        <p style="text-align: center; color:gray;">Integer sollicitudin sed nulla non consequat. Nullam vitae erat quis leo accumsan ullamcorper. Suspendisse leo purus, pellentesque posuere.</p>
+  <div class="web">
+    <div class="w1">
+        <img src="1.jpg" style="margin-left:30px;">
+        <p style="padding:20px;width:70%;color:gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+    </div>
+    <div class="w2">
+        <img src="2.jpg "  style="margin-left:30px;">
+        <p style="padding:20px;width:70%;color:gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+    </div>
+    <div class="w3">
+        <img src="3.jpg"  style="margin-left:30px;">
+        <p style="padding:20px;width:70%;color:gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+    </div>
+    <div class="w4">
+        <img src="4.jpg"  style="margin-left:30px;">
+        <p style="padding:20px;width:70%;color:gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+    </div>
+  </div>
+  <div class="web2">
+    <div class="w2">
+        <img src="1.jpg" style="margin-left:30px;">
+        <p style="padding:20px;width:70%;color:gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+    </div>
+    <div class="w2">
+        <img src="2.jpg "  style="margin-left:30px;">
+        <p style="padding:20px;width:70%;color:gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+    </div>
+    <div class="w2">
+        <img src="3.jpg"  style="margin-left:30px;">
+        <p style="padding:20px;width:70%;color:gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+    </div>
+    <div class="w2">
+        <img src="4.jpg"  style="margin-left:30px;color:gray;">
+        <p style="padding:20px;width:70%;color:gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+    </div>
+  </div>
+</div>
+<div class="call">
+    <h1 style="text-align: center;">CALL TO ACTION</h1>
+    <div style="font-size:50px; text-align: center;">---------</div>
+    <p style="color:gray;margin-left:30%;margin-right:20%;">Integer sollicitudin sed nulla non consequat. Nullam vitae erat quis leo accumsan ullamcorper. Suspendisse leo purus, pellentesque posuere.</p>
+    <div style="border:1px solid white;height:30px;width:120px; margin-left:700px;margin-top:50px; padding-top:10px; align-items:left;color:green;background-color: white;text-align: center;">Call to Action</div>
+</div>
+<div class="our">
+    <div class="o">
+    <h1 style="text-align: center; position:relative;margin-top:80px;">OUR PRICING</h1>
+    <div style="font-size:50px; text-align: center;">---------</div>
+        <p style="color:gray;margin-left:30%;margin-right:20%;margin-bottom:30px;">Integer sollicitudin sed nulla non consequat. Nullam vitae erat quis leo accumsan ullamcorper. Suspendisse leo purus, pellentesque posuere.</p></p>
+       <div></div>
+        <div class="table">
+            <div class="o1">
+                <div class="01.1"  style="background-color:rgb(73, 72, 72);color:white; position:relative;top:-42px;left:-20px;margin-right: -40px;">
+                <h2>Silver</h2>
+                <p>
+                    <span style="font-size:40px; font-weight:bold;">9.</span>
+                    <span style="font-size:20px;">99</span>
+                  </p>
+                  
+
+                <p>Per Month</p>
+                   </div>
+                <p> HTML5 and CSS3</p>
+       <p>Bootstrap 4</p>
+        <p>Well-commented code</p>
+            <p>IonIcons integrated</p>
+                <p>Free Google Font integrated</p>
+                    <p>Responsive design</p>
+                    <p style="border:1px solid white;height:30px;width:120px;margin-left:100px;margin-top:30px; padding-top:10px; align-items:left;color:white;background-color:rgb(73, 72, 72);text-align: center;">BUY NOW</p>
+
+            </div>
+            <div class="o2">
+                <div class="o1.2" style="background-color:#1dbf73;color:white;position:relative;top:-42px;left:-20px;margin-right: -40px;">
+
+                <h2>Gold</h2>
+                <p>
+                    <span style="font-size:40px; font-weight:bold;">9.</span>
+                    <span style="font-size:20px;">99</span>
+                  </p>
+                  
+
+                <p>Per Month</p>
+                </div>
+                <p> HTML5 and CSS3</p>
+       <p>Bootstrap 4</p>
+        <p>Well-commented code</p>
+            <p>IonIcons integrated</p>
+                <p>Free Google Font integrated</p>
+                    <p>Responsive design</p>
+                    <p style="border:1px solid white;height:30px;width:120px;margin-left:100px;margin-top:30px; padding-top:10px; align-items:left;color:white;background-color:rgb(39, 161, 39);text-align: center;">BUY NOW</p>
+
+            </div>
+            <div class="o3">
+                <div class="01.1"  style="background-color:rgb(73, 72, 72);color:white;position:relative;top:-42px;left:-20px;margin-right: -40px;">
+                <h2>Platinum</h2>
+                <p>
+                    <span style="font-size:40px; font-weight:bold;">9.</span>
+                    <span style="font-size:20px;">99</span>
+                  </p>
+                  
+
+                <p>Per Month</p>
+                </div>
+                <p> HTML5 and CSS3</p>
+       <p>Bootstrap 4</p>
+        <p>Well-commented code</p>
+            <p>IonIcons integrated</p>
+                <p>Free Google Font integrated</p>
+                    <p>Responsive design</p>
+                    <p style="border:1px solid white;height:30px;width:120px;margin-left:100px;margin-top:30px; padding-top:10px; align-items:left;color:white;background-color:rgb(73, 72, 72);text-align: center;">BUY NOW</p>
+
+            </div>
+        </div>
+
+</div>
+<div class="skills">
+    <h1 style="text-align: center;">OUR SKILLS</h1>
+    <div style="font-size:50px; text-align: center;">---------</div>
+    <p style="color:gray;margin-left:30%;margin-right:20%;">Quisque ac tincidunt ipsum egestas viverra mi, ac vehicula enim consectetur quis. In imperdiet varius elit, ut convallis lectus luctus quis.</p>
+   
+    <div style="display:flex; border:1px solid rgb(216, 215, 215); margin-left:350px; margin-bottom:20px;background-color:rgb(39, 161, 39);padding-bottom:5px; height:30px;width:900px; ">
+      <p style="color:white;">HTML</p>
+<p style=" color:white; margin-left:800px;">100%</p>
+</div>
+<div style="display:flex; border:1px solid rgb(216, 215, 215); margin-left:350px;margin-bottom:20px; background: linear-gradient(to right,rgb(79, 164, 192) 90%, rgb(216, 215, 215) 10%);padding-bottom:5px; height:30px;width:900px; ">
+    <p style="color:white;">CSS</p>
+<p style=" color:white; margin-left:740px;">90%</p>
+</div>
+<div style="display:flex; border:1px solid rgb(216, 215, 215); position:relative;padding-right:-80px;margin-left:350px;margin-bottom:20px; background: linear-gradient(to right, orange 80%, rgb(216, 215, 215) 20%);padding-bottom:5px; height:30px;width:900px; ">
+    <p style="color:white;">JQUERY</p>
+<p style=" color:white; margin-left:620px;">80%</p>
+</div>
+<div style="display:flex; border:1px solid rgb(216, 215, 215); margin-left:350px;margin-bottom:20px; background: linear-gradient(to right, red 70%, rgb(216, 215, 215) 30%);padding-bottom:3px;height:30px;width:900px; ">
+    <p style="color:white;">PHP</p>
+<p style=" color:white; margin-left:560px;">70%</p>
+</div>
+<div class="staff" style="display:flex;gap:100px;margin-left:450px;">
+   <div class="p1">
+    <p style="color:#1dbf73;font-size:40px; font-weight: bold;">100</p>
+    <p style="position: relative; top:-25px;">Our Staffs</p>
+</div>
+<div class="p2" >
+    <p style="color:#1dbf73;font-size:40px;font-weight: bold;">200</p>
+    <p style="position: relative; top:-25px;">Our Clients</p>
+</div>
+<div class="p3">
+    <p style="color:#1dbf73;font-size:40px;font-weight: bold;">300</p>
+    <p style="position: relative; top:-25px;left:-20px;">Completed Projects</p>
+</div>
+<div class="p4">
+    <p style="color:#1dbf73;font-size:40px;font-weight: bold;">400</p>
+    <p style="position: relative; top:-25px;left:-20px;">Running Projects</p>
+</div>
+</div>
+<div class="port">
+    <h1 style="text-align: center;">OUR PORTFOLIO</h1>
+    <div style="font-size:50px; text-align: center;">---------</div>
+    <p style="color:gray;margin-left:30%;margin-right:20%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra ligula nec hendrerit. Ut eu libero nec magna placerat fringilla.</p>
+  <p></p>
+</div>
+<div class="port1" style="border:1px solid rgb(216, 215, 215); background-color:rgb(49, 48, 48); width:600px;padding:10px;margin-left:490px;display:flex; gap:40px; font-size:12px;">
+    <a href="#"  class="a1" style="text-decoration: none; color:white;" >All</a>
+    <a href="# "style="text-decoration: none; color:white;">WEB DESIGN</a>
+    <a href="#" style="text-decoration: none; color:white;"> WEB DEVELOPMENT</a>
+    <a href="#" style="text-decoration: none; color:white;">APP DESIGN</a>
+    <a href="#" style="text-decoration: none; color:white;">APP DEVELOPMENT</a>
+   
+
+   </div>
+   <section class="final">
+    <div class="bimage">
+        <div class="bimg1">
+            <img src="11.jpg" alt="Project 1">
+            <div class="bg">
+                <h2>Lorem ipsum dolor</h2>
+                <p>WEB DESIGN</p>
+            </div>
+        </div>
+        <div class="bimg1">
+            <img src="22.jpg" alt="Project 2">
+            <div class="bg">
+                <h2>Nulla ullamcorper pharetra</h2>
+                <p>WEB DEVELOPMENT</p>
+            </div>
+        </div>
+        <div class="bimg1">
+            <img src="33.jpg" alt="Project 3">
+            <div class="bg">
+                <h2>Phasellus eget dictum</h2>
+                <p>APP DESIGN</p>
+            </div>
+        </div>
+        <div class="bimg1">
+            <img src="44.jpg" alt="Project 4">
+            <div class="bg">
+                
+                <h2 >Donec mattis vestibulum</h2>
+                <p>APP DEVELOPMENT</p>
+            </div>
+        </div>
+        <div class="bimg1">
+            <img src="55.jpg" alt="Project 5">
+            <div class="bg">
+                <h2>Pellentesque ullamcorper</h2>
+                <p>WEB DESIGN</p>
+            </div>
+        </div>
+        <div class="bimg1">
+            <img src="66.jpg" alt="Project 6">
+            <div class="bg">
+                <h2>Sed pretium sapien</h2>
+                <p>WEB DEVELOPMENT</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="contact">
+    <div class="c1">
+    <h1 style="text-align: center;">Contact Us</h1>
+    <div style="font-size:50px; text-align: center;">---------</div>
+   
+ <p style="color:gray;margin-left:30%;margin-right:20%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra ligula nec hendrerit. Ut eu libero nec magna placerat fringilla.</p>
+</div>
+<div class="cn">
+ <div class="c2">
+    <i class="fa fa-map-marker" style="font-size: 40px;"></i>
+    <p style="font-weight:bold">ADDRESS</p>
+    <p style="font-weight: normal;">Your Location, City, Country</p>
+    </div>
+    <div class="c2">
+    <i class="fa fa-phone" style="font-size: 40px;"></i>
+    <p style="font-weight:bold">PHONE NUMBER</p>
+    <p style="font-weight: normal;">+123-456-789</p>
+</div>
+<div class="c2">
+    <i class="fa fa-envelope" style="font-size: 40px;"></i>
+    <p style="font-weight:bold">EMAIL</p>
+    <p style="font-weight: normal;">sudeepacharjeegp@gmail.com</p>
+</div>
+</div>
+</div>
+<div class="location">
+    <div classs="map" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d46830150.998557456!2d-119.80930200000002!3d44.242365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1741933047234!5m2!1sen!2sbd" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="details">
+        <input type="text" name="tname" placeholder="Your Name">
+        <input type="text" name="t2name" placeholder="Your Email">
+        <br><br>
+        <input type="text" name="tname" placeholder="Subject" style="width:340px;">
+        <br><br>
+        <textarea  name="Message" rows=5 placeholder=" Message" ></textarea>
+        <br><br>
+        <input type="submit" value="Send Message"  style="background-color: green; width:130px;height:35px;">
+
+    </div>
+</div>
+<div class="end">
+    <div class="e1">
+        <div style="color:white; font-size:30px; margin-top: 40px; margin-left:30px;" > <b>GO GREEN</b></div> 
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tortor commodo, sollicitudin velit nec, lobortis erat. Sed rutrum metus ac augue scelerisque, vel commodo erat commodo. Mauris quis mattis sem. Maecenas dictum nunc.</p>
+    </div>
+    <div class="e2">
+<p  style="position:relative;margin-top:15px;">About Us</p>
+<p style="font-weight:bold;position:relative;top:-15px;">----------</p> 
+<p  >Home</p>
+<p >____________________</p>
+<p>About us</p>
+<p >____________________</p>
+<p >Our services</p>
+<p >____________________</p>
+<p >Terms and Conditions</p>
+<p >____________________</p>
+<p >Privacy policy</p>
+<p >____________________</p>
+   </div>
+   <div class="e3">
+    <p>Contact Us</p>
+    <p style="font-weight:bold;position:relative;top:-15px;">------</p> 
+    <p>Your Location</p>
+    <p>Your City</p>
+    <p>Your Country</p>
+    <p><b>Phone:</b>+123-456-7890</p>
+    <p><b>Email:</b>    info@example.com</p>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-linkedin"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-youtube"></i>
+   </div>
+   <div class="e4">
+    <p><b>Subscrption</b></p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+ <p style="border:0.5px solid rgb(250, 239, 239),width:200px,text-align:right;position:relative:margin-left:-5px;background : linear-gradient(to right,white 50%, black 50%);padding-bottom:5px;color:white;">Subscribe</p>
+</div>
+</div>
+<div class="footer">
+    <div class="f1" style="display:flex; gap:10px;">
+    <p style="margin-left: 150px;">© Copyright</p>
+    <p style="color:#1dbf73;"> Your Site Name.</p>
+    <p>All Rights Reserved</p>
+    </div>
+    <div class="f1.1" style="position:relative;top:40px;margin-left:-750px;display:flex;gap:10px;">
+    <p style="margin-left: -80px;">Template By</p>
+    <p style="color:#1dbf73;"> @SudeepAcharjee</p>
+    </div>
+
+<div class="f2">
+    <img src="last.jpg">
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
