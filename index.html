@@ -312,9 +312,27 @@ justify-content:space-between
     justify-content: center;
     align-items: center;
 }
-@media (max-width: 600px) {
- body{
-     background-color:white;
+@media only screen and (max-width: 768px) {
+  
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+ 
+  .section, .about, .services {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+
+  footer {
+    text-align: center;
+    padding: 15px;
+  }
+
+ 
 }
 
 
