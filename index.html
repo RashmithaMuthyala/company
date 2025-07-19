@@ -319,130 +319,78 @@ justify-content:space-between
 
 
 @media screen and (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
 
-  /* HEADER */
-  .first {
+  /* Make cards stack vertically */
+  .price-table {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    height: auto;
+    gap: 20px;
+  }
+
+  .single-price {
+    width: 90% !important;
+    margin-bottom: 20px;
+  }
+
+  /* Fix skill bars overflowing */
+  .our-skill {
     padding: 20px;
   }
 
-  .go {
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  /* HERO / IMAGE */
-  .image {
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .image img {
+  .our-skill .container {
     width: 100%;
-    height: auto;
+    overflow-x: hidden;
   }
 
-  .gray {
-    padding: 20px;
+  .bar {
+    width: 100% !important;
+  }
+
+  /* Counter blocks */
+  .counter-up {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .counter-up .content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .counter {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  /* Fix portfolio filter buttons */
+  .portfolio-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .portfolio-menu li {
+    margin: 5px 10px;
     font-size: 14px;
   }
 
-  /* ABOUT */
-  .about {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+  /* Fix spacing issue after skills */
+  .our-skill {
+    margin-bottom: 40px;
   }
 
-  .img1, .para {
-    width: 100%;
+  /* Optional: center align text */
+  .our-skill h2,
+  .our-skill p,
+  .our-portfolio h2,
+  .our-portfolio p {
     text-align: center;
   }
 
-  /* SERVICES */
-  .services {
-    padding: 20px;
-    text-align: center;
-  }
-
-  .imagess {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .i1, .i2, .i3 {
-    width: 100%;
-    height: auto;
-  }
-
-  /* CALL TO ACTION */
-  .call, .our {
-    padding: 20px;
-    text-align: center;
-  }
-
-  .table {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .o1, .o2, .o3 {
-    width: 100%;
-  }
-
-  /* STAFF & PORTFOLIO */
-  .staff {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .port1 {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .bimage {
-    grid-template-columns: 1fr;
-  }
-
-  /* CONTACT */
-  .location, .cn {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  iframe {
-    width: 100%;
-  }
-
-  /* FOOTER */
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .f1, .f2 {
-    margin: 0;
-  }
 }
 
 
